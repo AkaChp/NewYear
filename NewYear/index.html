@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Year 2025 Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>        
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1e1e2f;
+            color: #fff;
+        }
+        header {
+            background-color: #222;
+            padding: 20px;
+            text-align: center;
+            color: #ffd700;
+            font-size: 24px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            background-color: #333;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            padding: 10px;
+        }
+        nav a:hover {
+            background-color: #ffd700;
+            color: #333;
+        }
+        .dashboard {
+            padding: 20px;
+        }
+        .interactive-graphs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .graph {
+            background: #050303; /* Warna latar untuk gambar yang hilang */
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        .graph h3 {
+            text-align: center;
+        }
+        footer {
+            background-color: #222;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .animation {
+            text-align: center;
+            margin: 20px;
+        }
+        .snowflake {
+            color: #fff;
+            font-size: 20px;
+            animation: snow 5s linear infinite;
+        }
+        @keyframes snow {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(600px); }
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #060101;
+            padding: 10px 20px;
+        }
+        .logo img {
+            width: 50px;
+            height: auto;
+        }
+        .admin-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .video-container video {
+            width: 90%;
+            max-width: 600px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo" class="logo-img">
+        </div>
+        <div class="right-icons">
+            <img src="images/admin-icon.png" alt="Admin Icon" class="admin-icon">
+        </div>
+    </div>
+
+    <header>
+        🎉 Welcome to the 2025 New Year Dashboard 🎉
+    </header>
+
+    <nav>
+        <a href="#overview">Overview</a>
+        <a href="#statistics">Statistics</a>
+        <a href="#events">Events</a>
+        <a href="#settings">Settings</a>
+    </nav>
+
+    <div class="dashboard">
+        <h2>Interactive Graphs</h2>
+        <div class="interactive-graphs">
+            <div class="graph">
+                <h3>Klaster 2</h3>
+                <img src="images/graph1.png" alt="Graph 1 Image" class="graph-img">
+                <p>Tanggal 25 - 26 Desember 2024 Pelayanan TUTUP</p>
+            </div>
+            <div class="graph">
+                <h3>Klaster 3</h3>
+                <img src="images/graph2.png" alt="Graph 2 Image" class="graph-img">
+                <p>Tanggal 25 - 26 Desember 2024 Pelayanan TUTUP</p>
+            </div>
+            <div class="graph">
+                <h3>Klaster 5</h3>
+                <img src="images/graph3.png" alt="Graph 3 Image" class="graph-img">
+                <p>Tanggal 25 - 26 Desember 2024 SIAGA 24 Jam</p>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video controls>
+                <source src="videos/health-theme.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div class="animation">
+        <h2>🎄 25 - 26 Desember 2024 Libur Nasional & Cuti Bersama Natal 2024 🎄</h2>
+        <div>
+            <span class="snowflake">❄</span>
+            <span class="snowflake">❄</span>
+            <span class="snowflake">❄</span>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 All Rights Reserved. Designed with 💖 for the New Year.
+    </footer>
+</body>
+</html>

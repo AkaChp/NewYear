@@ -1,0 +1,49 @@
+/* Gaya untuk Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333; /* Sesuaikan dengan tema gelap */
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap; /* Responsif untuk layar kecil */
+}
+
+/* Gaya untuk Logo */
+.logo-img {
+    height: 40px;
+    width: auto;
+    object-fit: contain; /* Pastikan gambar proporsional */
+}
+
+/* Gaya untuk Ikon Admin */
+.right-icons {
+    display: flex;
+    align-items: center;
+}
+
+.admin-icon {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-left: 15px;
+    cursor: pointer;
+    border: 2px solid #fff; /* Garis putih untuk penonjolan */
+}
+
+/* Animasi Hover */
+.logo-img:hover, .admin-icon:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+    will-change: transform; /* Optimalisasi */
+}
+
+/* Gaya untuk gambar dalam grafik */
+.graph-img {
+    width: 100%; /* Sesuaikan dengan lebar kontainer */
+    height: auto; /* Proporsional */
+    margin: 10px 0; /* Jarak antara gambar dan elemen lain */
+    border-radius: 8px; /* Opsional, untuk sudut membulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+}
